@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #552583;
+    --secondary-color: #fdb927;
+    --text-color: #fdb927;
+    --background-color: #0a0a0a;
+    --hover-color: #7851A9;
+    --font-family: 'Arial',sans-serif;
+}
+
+body {
+    font-family: var(--background-color);
+    background-color: var(--background-color); /*borrowed from ai-1.css */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*Borrowed from the ai-1.css  */
+header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+/*Borrowed from the styles.css  */
+h1, h2 {
+    margin: 10px 0;
+    color: var(--hover-color);
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3 ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3 ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-color);
+}
+
+/* Theme Button Styling */
+#theme-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: var(--background-color) 0.3s ease;
+    z-index: 10;
+}
+
+/*Borrowed from the ai-1.css  */
+#theme-button:hover {
+    background-color: var(--hover-color, #ff9900);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
