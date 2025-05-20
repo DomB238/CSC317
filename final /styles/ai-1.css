@@ -1,0 +1,126 @@
+/* ai-1.css - AI-Generated CSS from Text Prompt */
+
+/* AI Prompt Used:
+Create a modern, responsive portfolio website styled with a Los Angeles Lakers theme. 
+Use deep purple (#552583) and bright gold (#FDB927) as the primary colors.
+Typography should be bold and high-contrast, using Montserrat or a modern sans-serif font.
+Navigation should have a hover effect with color transitions.
+The layout should be grid-based for projects and flexbox-based for the navigation and header.
+Include smooth transitions and slight animations on hover for interactive elements.
+Ensure good spacing and a clear visual hierarchy. */
+
+:root {
+    --primary-color: #b22af6;
+    --secondary-color: #FDB927;
+    --text-color: #ffffff;
+    --background-color: #0a0a0a;
+    --hover-color: #FDB927;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-color);
+}
+
+/* * Theme Button Styling */
+#theme-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    color: #FDB927;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+#theme-button:hover {
+    background-color: var(--hover-color, #ff9900);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
