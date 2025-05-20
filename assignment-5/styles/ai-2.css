@@ -15,9 +15,9 @@ Ensure excellent spacing, visual hierarchy, and a responsive design. */
 
 /* Color Variables - Based on Lakers official colors */
 :root {
-    --lakers-purple: #552583;
-    --lakers-gold: #FDB927;
-    --off-white: #F5F5F5;
+    --lakers-purple: #FDB927; 
+    --lakers-gold: #552583;
+    --off-white: black;
     --dark-gray: #222222;
     --transition-speed: 0.3s;
   }

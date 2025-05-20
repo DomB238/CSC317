@@ -1,25 +1,28 @@
 :root {
-    --primary-color: #552583;
-    --secondary-color: #FDB927;
-    --accent-color: #ffcc00;
-    --hover-color: #ff9900;
-    --text-color: purple;
-    --font-family: 'Arial', sans-serif;
+    --primary-color: #FDB927;
+    --secondary-color: purple;
+    --text-color: white;
+    --background-color: #0a0a0a;
+    --hover-color: #a027fd;
+    --font-family: 'Arial',sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
+    font-family: var(--background-color);
+    background-color: var(--background-color); /*borrowed from ai-1.css */
     color: var(--text-color);
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
+/*Borrowed from the ai-1.css  */
 header {
-    background-color: var(--primary-color);
-    padding: 20px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     text-align: center;
+    padding: 30px 0;
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .profile img {
@@ -27,6 +30,14 @@ header {
     border: 5px solid var(--secondary-color);
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+/*Borrowed from the styles.css  */
 h1, h2 {
     margin: 10px 0;
     color: var(--hover-color);
@@ -94,7 +105,7 @@ h2 {
     bottom: 20px;
     right: 20px;
     background: var(--accent-color);
-    color: white;
+    color: #fdb927;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -103,6 +114,10 @@ h2 {
     z-index: 10;
 }
 
+/*Borrowed from the ai-1.css  */
+#theme-button:hover {
+    background-color: var(--hover-color, #ff9900);
+}
 
 footer {
     background-color: var(--primary-color);
@@ -110,3 +125,6 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+
